@@ -11,3 +11,5 @@
 |Malsam Leandro|leandro.malsam@gmail.com|43779|leatex|
 |Oronó Pablo|oronopablo@hotmail.com.ar|33531|pablov1993|
 |Soñez Mailín|mailinsonez@gmail.com|28.708|mailinsz|
+
+Posibles tareas
