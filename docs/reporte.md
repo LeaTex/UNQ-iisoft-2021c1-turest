@@ -6,7 +6,12 @@
 
 Para el administrador de un local de comida, quien necesita la gestión sistemática y brindar un servicio digital a sus clientes, TuRest es una app web que gestiona atención y experiencia del cliente para el nuevo contexto. A diferencia de otras aplicaciones gastronómicas, nuestro producto le dará fidelización de clientes, menúes accesibles para diversos comensales y autonomía en la gestión del servicio. Y en resumen una transformación digital.
 
+<!-- TOC -->
 [toc]
+<!-- /TOC -->
+
+## otro toc
+{:toc}
 
 ## SPRINT [número]
 
