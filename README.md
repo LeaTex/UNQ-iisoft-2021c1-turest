@@ -25,5 +25,5 @@ ___
 * [Backlog General](https://github.com/LeaTex/unq-iisoft-2021c1-turest/projects/1#column-13922699) **[TODO: completar]**
 * [Documento de Reporte](https://leatex.github.io/unq-iisoft-2021c1-turest/docs/reporte) 
 * [Repositorio](https://github.com/LeaTex/unq-iisoft-2021c1-turest) 
-* Url del producto**[TODO: completar]**
+* Url del producto **[TODO: completar]**
 
