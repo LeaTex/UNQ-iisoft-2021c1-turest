@@ -21,8 +21,9 @@
 
 ___
 
-- Presentación del proyecto: <https://docs.google.com/document/d/1T5-Aj0NlKPnAhlRkls8oUzbgfaIKAxaW5ZMjY3Ea4Ww/edit?usp=sharing>
-- Tablero con el Backlog general: **[TODO: completar]** <https://github.com/LeaTex/unq-iisoft-2021c1-turest/projects/1#column-13922699>
-- Documento de reporte: <https://leatex.github.io/unq-iisoft-2021c1-turest/docs/reporte>
-- Repositorio: <https://github.com/LeaTex/unq-iisoft-2021c1-turest>
-- URL del producto: **[TODO: completar]**
+* [Presentación del Proyecto](https://docs.google.com/document/d/1T5-Aj0NlKPnAhlRkls8oUzbgfaIKAxaW5ZMjY3Ea4Ww/edit?usp=sharing) - Elevator Pitch, Tecnologías y Frameworks, Herramientas
+* [Backlog General](https://github.com/LeaTex/unq-iisoft-2021c1-turest/projects/1#column-13922699) **[TODO: completar]**
+* [Documento de Reporte](https://leatex.github.io/unq-iisoft-2021c1-turest/docs/reporte) 
+* [Repositorio](https://github.com/LeaTex/unq-iisoft-2021c1-turest) 
+* Url del producto**[TODO: completar]**
+
