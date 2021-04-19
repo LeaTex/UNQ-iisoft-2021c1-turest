@@ -1,8 +1,15 @@
-# Universidad Nacional de Quilmes  
+# Universidad Nacional de Quilmes
+
 ## Elementos de Ingeniería de Software
+
 ## 1er cuatrimestre 2021
 
-# - TuRest -
+## Proyecto: TuRest
+
+**Equipo número**: 1  
+**Revisor asignado**: Warmi Guercio
+
+**Integrantes**:
 
 |Nombre|e-mail|Legajo|Git|
 |---|---|---|---|
@@ -10,6 +17,12 @@
 |Barraza Miguel|miguelbarraza2015@gmail.com|33108|barrazamigu
 |Malsam Leandro|leandro.malsam@gmail.com|43779|leatex|
 |Oronó Pablo|oronopablo@hotmail.com.ar|33531|pablov1993|
-|Soñez Mailín|mailinsonez@gmail.com|28.708|mailinsz|
+|Soñez Mailín|mailinsonez@gmail.com|28708|mailinsz|
 
-Posibles tareas
+___
+
+- Presentación del proyecto: <https://docs.google.com/document/d/1T5-Aj0NlKPnAhlRkls8oUzbgfaIKAxaW5ZMjY3Ea4Ww/edit?usp=sharing>
+- Tablero con el Backlog general: **[TODO: completar]** <https://github.com/LeaTex/unq-iisoft-2021c1-turest/projects/1#column-13922699>
+- Documento de reporte: <https://leatex.github.io/unq-iisoft-2021c1-turest/docs/reporte>
+- Repositorio: <https://github.com/LeaTex/unq-iisoft-2021c1-turest>
+- URL del producto: **[TODO: completar]**

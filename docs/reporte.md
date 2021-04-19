@@ -10,9 +10,6 @@ Para el administrador de un local de comida, quien necesita la gestión sistemá
 [toc]
 <!-- /TOC -->
 
-## otro toc
-{:toc}
-
 ## SPRINT [número]
 
 **Scrum master:** (del sprint)
