@@ -38,7 +38,6 @@ En esta instancia deberán:
 
 - Print de pantalla del inicio del sprint con las US comprometidas
 - ![](https://github.com/LeaTex/unq-iisoft-2021c1-turest/blob/main/docs/Sprint2_unq-iisoft-2021c1-turest00.png)
-- Cantidad de story points comprometidos en el sprint
 
 ### Daily
 
@@ -48,6 +47,7 @@ En esta instancia deberán:
 ### Refinamiento
 
 - Acciones realizadas dentro del refinamiento
+- -No se realizaron acciones
 - En caso de agregar / modificar US, identificar:
   - Títulos de la US refinadas
   - Qué se refinó de cada una
