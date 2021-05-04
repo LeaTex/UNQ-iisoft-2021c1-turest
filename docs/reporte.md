@@ -37,7 +37,7 @@ En esta instancia deberán:
 ### Planning
 
 - Print de pantalla del inicio del sprint con las US comprometidas
-- ![](/Sprint2_unq-iisoft-2021c1-turest00.png)
+- ![](https://github.com/LeaTex/unq-iisoft-2021c1-turest/blob/main/docs/Sprint2_unq-iisoft-2021c1-turest00.png)
 - Cantidad de story points comprometidos en el sprint
 
 ### Daily
