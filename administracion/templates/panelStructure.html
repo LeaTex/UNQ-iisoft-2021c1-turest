@@ -8,8 +8,21 @@
 		<title>panel de control</title>
 	</head>
 	<body>
-		<a href="{% url 'itemNew' %}"><span class="glyphicon glyphicon-plus"> Nueva entrada al menú</span></a>
-		<div class="container" style="background-color:#ccc">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+			<p class="navbar-brand text-white">Gestión</p>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Menú">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li><a class="nav-link text-white" href="{% url 'home' %}">Inicio</a></li>
+					<li><a class="nav-link text-white" href="{% url 'home' %}">Ver menú</a></li>
+					<li><a class="nav-link text-white" href="{% url 'itemNew' %}"><span class="glyphicon glyphicon-plus"> Nueva entrada</span></a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container" style="background-color:#ccc"></li>
 			{% block content %}
 			{% endblock %}
 		</div>
