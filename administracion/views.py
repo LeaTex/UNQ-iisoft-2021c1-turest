@@ -3,8 +3,14 @@ from django.utils import timezone
 from .models import Item
 from .forms import ItemForm
 
+def home(request):
+	return render(request, 'admin/home.html', {'items':Item.objects.all()})
+
 def itemList(request):
-	return render(request, 'admin/list.html', {'items':Item.objects.all()})
+	return render(request, 'admin/items.html', {'items':Item.objects.all()})
+
+def itemInfo(request, pk):
+	return render(request, 'admin/itemInfo.html', {'item': get_object_or_404(Item, pk=pk)})
 
 def itemChange(request, pk):
 	return render(request, 'admin/itemChange.html', {'item': get_object_or_404(Item, pk=pk)})
@@ -17,6 +23,6 @@ def itemNew(request):
 			item.author = request.user
 			item.published_date = timezone.now()
 			item.save()
-			return redirect('')
+			return redirect('itemInfo', pk=item.pk)
 	else:
 		return render(request, 'admin/itemNew.html', {'form': ItemForm()})
