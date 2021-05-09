@@ -32,12 +32,11 @@ En esta instancia deberán:
 
 ## Sprint 2
 
-**Scrum master:** (del sprint)
+**Scrum master:** Mariano Álvarez
 
 ### Planning
 
-- Print de pantalla del inicio del sprint con las US comprometidas
-- ![](https://github.com/LeaTex/unq-iisoft-2021c1-turest/blob/main/docs/Sprint2_unq-iisoft-2021c1-turest00.png)
+![](img/sprint2_planning.png)
 
 ### Daily
 
@@ -46,37 +45,24 @@ En esta instancia deberán:
 
 ### Refinamiento
 
-- Acciones realizadas dentro del refinamiento
-- -No se realizaron acciones
-- En caso de agregar / modificar US, identificar:
-  - Títulos de la US refinadas
-  - Qué se refinó de cada una
+No se realizaron accionesn de refinamiento.
 
 ### Review
 
-- Print de pantalla con las US en "Done".
-- Print de pantalla con el sprint cerrado.
-- Cantidad Story Points quemados.
-- Print de pantalla del Burndown Chart.
+Cantidad Story Points quemados: 0
+No se realizaron tareas de desarrollo.
 
 ### Retrospective
 
-- Actividad realizada.
-- Puntos a mejorar / problemas.
-- Acciones a tomar en el próximos sprint para resolver los puntos encontrados.
+No se realizó.
 
 ### Calidad
 
-- Implementación de criterio de aceptación
-- Estado del CI y su reporte visual.
-- Estado de cobertura y su reporte visual.
-- Puntos a mejorar / problemas
-- Acciones a tomar para resolver los temas en el próximo sprint.
+No se realizaron acciones.
 
+## Sprint 3
 
-## Sprint [número - N]
-
-**Scrum master:** (del sprint)
+**Scrum master:** Leandro Malsam
 
 ### Planning
 
