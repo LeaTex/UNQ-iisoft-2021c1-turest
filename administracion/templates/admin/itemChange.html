@@ -1,7 +1,10 @@
 {% extends 'panelStructure.html' %}
 {% block content %}
 	<div class="row mt-5">
-		<div class="col-12">
-			<h1 class="text-center">Editando: {{item.name}}</h1>
-		</div>
+		<h1 class="text-center">Editando:</h1>
+		<form method="POST" class="post-form">{% csrf_token %}
+			{{ form }}
+				<button type="submit" class="save btn btn-default">Editar</button>
+		</form>
+	</div>
 {% endblock %}
