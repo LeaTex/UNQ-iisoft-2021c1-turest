@@ -66,38 +66,35 @@ No se realizaron acciones.
 
 ### Planning
 
-- Print de pantalla del inicio del sprint con las US comprometidas
-- Cantidad de story points comprometidos en el sprint
+![](img/sprint_3_planning.png)
+
+- Cantidad de story points comprometidos en el sprint: **7 SP**
 
 ### Daily
 
-- Si se realizó o no.
-- Frecuencia
+- A través de WhatsApp a diario.
+- A través de Google Meet al menos 2 veces por semana.
 
 ### Refinamiento
 
-- Acciones realizadas dentro del refinamiento
-- En caso de agregar / modificar US, identificar:
-  - Títulos de la US refinadas
-  - Qué se refinó de cada una
+N/A
 
 ### Review
 
-- Print de pantalla con las US en "Done"
-- Print de pantalla con el sprint cerrado
-- Cantidad Story Points quemados
-- Print de pantalla del Burndown Chart
+![](img/sprint_3_review.png)
+
+![](img/sprint_3_burndown.png)
+
+- Cantidad Story Points quemados: **7 SP**
 
 ### Retrospective
 
-- Actividad realizada
-- Puntos a mejorar / problemas
-- Acciones a tomar en el próximos sprint para resolver los puntos encontrados
+Sprints 1 a 3.
+
+- Inicialmente se demoró la selección de las herramientas de gestión, pero una vez definidas, la organización mejoró notablemente.
+- Falta de seniority en el uso de las tecnologías. Se deberá seguir investigando y capacitando al equipo.
+- Las planificaciones no se realizaron al comienzo de cada sprint, sino con cierta demora, lo que implicó que sobre los días finales haya que apresurar las tareas aumentando la carga de trabajo. Se deberá realizar la planificación temprana al comienzo del sprint.
 
 ### Calidad
 
-- Implementación de criterio de aceptación
-- Estado del CI y su reporte visual.
-- Estado de cobertura y su reporte visual.
-- Puntos a mejorar / problemas
-- Acciones a tomar para resolver los temas en el próximo sprint.
+- No se realizaron acciones.
