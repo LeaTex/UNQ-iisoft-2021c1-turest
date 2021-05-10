@@ -1,0 +1,21 @@
+{% extends 'publicStructure.html' %}
+{% block content %}
+	{% if form.errors %}
+		<div class="alert alert-danger" role="alert">
+			Usuario y contraseña incorrectos. por favor verifique sus datos y vuelva a intentarlo
+		</div>
+	{% endif %}
+
+	<form class="form-siging" method="POST">
+		{% csrf_token %}
+		<img class="mb-4" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+		<h1 class="h3 mb-3 font-weight-normal">Ingresar</h1>
+		<p>Para ingresar deberá  identificarse.</p>
+		<label for="id_username" class="sr-only">Usuario:</label>
+		{{form.username}}
+		<label for="inputPassword" class="sr-only">Contraseña</label>
+		{{form.password}}
+		<button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+	</form>
+	<a href="{% url 'password_reset' %}">Recuperar contraseña</a>
+    {% endblock %}
