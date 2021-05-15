@@ -1,0 +1,19 @@
+{% extends 'panelStructure.html' %}
+{% block content %}
+	<div class="row mt-5">
+		<div class="col-12">
+			<h1 class="text-center">Mis mozos</h1>
+		</div>
+	</div>
+	{% for mozo in mozos %}
+		<article class="row mt-3">
+			<div class="col-12">
+				<h2 class="text-center">nombre: ${{mozo.nombre}}</h2>
+				<p class="text-primary">dni: ${{mozo.dni}}</p>
+                <p class="text-primary">direccion: ${{mozo.direccion}}</p>
+                <p class="text-primary">telefono: ${{mozo.telefono}}</p>
+                <p class="text-primary">mail: ${{mozo.mail}}</p>
+			</div>
+		</article>
+	{% endfor %}
+{% endblock %}
