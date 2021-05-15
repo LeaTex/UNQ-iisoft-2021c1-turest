@@ -18,10 +18,10 @@ class Item(models.Model):
 
 class Mozo(models.Model):
 	author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-	nombre = models.CharField(max_lenght=200)
+	nombre = models.CharField(max_length=200)
 	dni = models.CharField(max_length=20)
 	direccion = models.CharField(max_length=200)
-	telefono = models.PositiveIntegerField(max_length=20)
+	telefono = models.PositiveIntegerField()
 	mail = models.EmailField(max_length=200)
 
 	def publish(self):
@@ -29,7 +29,7 @@ class Mozo(models.Model):
 		self.save()
 
 	def __str__(self):
-		return self.name
+		return self.nombre
 
 
 

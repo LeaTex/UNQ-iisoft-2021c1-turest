@@ -56,4 +56,7 @@ def mozoNew(request):
 		else:
 			return render(request, 'admin/mozoNew.html', {'form': MozoForm()})
 
+@login_required
+def mozoList(request):
+	return render(request, 'admin/mozos.html', {'mozos':Mozo.objects.all()})
 
