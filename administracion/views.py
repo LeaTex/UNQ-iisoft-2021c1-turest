@@ -48,13 +48,13 @@ def mozoNew(request):
 	if request.method == "POST":
 		form = MozoForm(request.POST)
 		if form.is_valid():
-			mozo = form.save(commit=False)
-			mozo.author = request.user
-			mozo.published_date = timezone.now()
-			mozo.save()
-			return redirect('mozos')
-		else:
-			return render(request, 'admin/mozoNew.html', {'form': MozoForm()})
+			item = form.save(commit=False)
+			item.author = request.user
+			item.published_date = timezone.now()
+			item.save()
+			return redirect('mozoList')
+	else:
+		return render(request, 'admin/mozoNew.html',{'form': MozoForm()})
 
 @login_required
 def mozoList(request):
