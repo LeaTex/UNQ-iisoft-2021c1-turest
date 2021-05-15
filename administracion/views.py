@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
-from .models import Item
-from .forms import ItemForm
+from .models import Item,Mozo
+from .forms import ItemForm, MozoForm
 from django.contrib.auth.decorators import login_required
 
 @login_required
@@ -42,3 +42,21 @@ def itemNew(request):
 			return redirect('itemInfo', pk=item.pk)
 	else:
 		return render(request, 'admin/itemNew.html', {'form': ItemForm()})
+
+@login_required
+def mozoNew(request):
+	if request.method == "POST":
+		form = MozoForm(request.POST)
+		if form.is_valid():
+			item = form.save(commit=False)
+			item.author = request.user
+			item.published_date = timezone.now()
+			item.save()
+			return redirect('mozoList')
+	else:
+		return render(request, 'admin/mozoNew.html',{'form': MozoForm()})
+
+@login_required
+def mozoList(request):
+	return render(request, 'admin/mozos.html', {'mozos':Mozo.objects.all()})
+
