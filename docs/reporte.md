@@ -122,7 +122,7 @@ N/A
 
 ![](img/sprint_4_review.PNG)
 
-![](img/sprint_3_burndown.png)
+![](img/sprint_4_burndown.png)
 
 - Cantidad Story Points quemados: **11 SP**
 
