@@ -132,8 +132,8 @@ Sprints 4.
 
 - Con los ambientes correctamente instalados y las herramientas de trabajo definidas, trabajamos mucho mas fluidos en este Sprint
 - Seguimos avanzando con el aprendizaje de las herramientas durante el sprint
-- Las planificaciones fueron realizadas en el día 0 del Sprint y esto nos ayudo en nuestra organización.
-- Falta profundizar en tests 
+- Las planificaciones fueron realizadas en el día 0 del Sprint y esto nos ayudo en nuestra organización. Vamos a seguir con esta dinamica
+- Falta profundizar en tests. En sprint nro 5 vamos a realizar test para el back-end la US de "alta de mozo".
 
 ### Calidad
 
