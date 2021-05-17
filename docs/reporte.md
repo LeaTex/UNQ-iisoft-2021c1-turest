@@ -66,7 +66,7 @@ No se realizaron acciones.
 
 ### Planning
 
-![](img/sprint_3_planning.png)
+![](img/sprint_3_planning.PNG)
 
 - Cantidad de story points comprometidos en el sprint: **7 SP**
 
@@ -81,7 +81,7 @@ N/A
 
 ### Review
 
-![](img/sprint_3_review.png)
+![](img/sprint_3_review.PNG)
 
 ![](img/sprint_3_burndown.png)
 
