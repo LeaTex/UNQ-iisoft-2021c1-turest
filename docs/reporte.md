@@ -98,3 +98,44 @@ Sprints 1 a 3.
 ### Calidad
 
 - No se realizaron acciones.
+
+## Sprint 4
+
+**Scrum master:** Pablo Oronó
+
+### Planning
+
+![](img/sprint_3_planning.png)
+
+- Cantidad de story points comprometidos en el sprint: **11 SP**
+
+### Daily
+
+- A través de WhatsApp a diario.
+- A través de Google Meet al menos 2 veces por semana.
+
+### Refinamiento
+
+N/A
+
+### Review
+
+![](img/sprint_3_review.png)
+
+![](img/sprint_3_burndown.png)
+
+- Cantidad Story Points quemados: **11 SP**
+
+### Retrospective
+
+Sprints 4.
+
+- Con los ambientes correctamente instalados y las herramientas de trabajo definidas, trabajamos mucho mas fluidos en este Sprint
+- Seguimos avanzando con el aprendizaje de las herramientas durante el sprint
+- Las planificaciones fueron realizadas en el día 0 del Sprint y esto nos ayudo en nuestra organización.
+- Falta profundizar en tests 
+
+### Calidad
+
+- No se realizaron acciones.
+
