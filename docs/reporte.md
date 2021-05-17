@@ -120,7 +120,7 @@ N/A
 
 ### Review
 
-![](img/sprint_4_review.png)
+![](img/sprint_4_review.PNG)
 
 ![](img/sprint_3_burndown.png)
 
