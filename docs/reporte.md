@@ -105,7 +105,7 @@ Sprints 1 a 3.
 
 ### Planning
 
-![](img/sprint_4_planning.png)
+![](img/sprint_4_planning.PNG)
 
 - Cantidad de story points comprometidos en el sprint: **11 SP**
 
