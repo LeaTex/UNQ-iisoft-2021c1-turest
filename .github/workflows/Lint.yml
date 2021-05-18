@@ -1,0 +1,33 @@
+name: Lint
+
+on: [push]
+
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+      
+      - name: Set up Python 3.8.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8.9
+
+      - name: Install dependencies
+        run: |
+           python -m pip install --upgrade pip
+           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+           pip install black flake8
+
+      - name: Run linters
+        uses: wearerequired/lint-action@v1
+        with:
+          continue_on_error: false
+          flake8: true
+          # E501: line too long (> 79 characters)
+          flake8_args: "--ignore E501"
+          # black: true
+          # mypy: true
