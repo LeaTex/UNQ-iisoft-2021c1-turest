@@ -6,6 +6,8 @@
 
 ## Proyecto: TuRest
 
+![Lint status](https://github.com/LeaTex/unq-iisoft-2021c1-turest/workflows/Lint/badge.svg)
+
 **Equipo número**: 1  
 **Revisor asignado**: Warmi Guercio
 
@@ -27,3 +29,8 @@ ___
 * [Documento de Reporte](https://leatex.github.io/unq-iisoft-2021c1-turest/docs/reporte) 
 * [Repositorio](https://github.com/LeaTex/unq-iisoft-2021c1-turest) 
 * Url del producto **[TODO: completar]**
+
+___
+
+### Extras
+* [Lint action](https://github.com/marketplace/actions/lint-action)

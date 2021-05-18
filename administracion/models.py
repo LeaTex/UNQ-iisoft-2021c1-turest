@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
+
 class Item(models.Model):
     author = models.ForeignKey("auth.User", on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
@@ -15,6 +16,7 @@ class Item(models.Model):
 
     def __str__(self):
         return self.name
+
 
 class Mozo(models.Model):
     author = models.ForeignKey("auth.User", on_delete=models.CASCADE)
