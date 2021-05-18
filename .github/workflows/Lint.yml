@@ -3,15 +3,6 @@ name: Lint
 on: [push]
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-
-
-jobs:
   run-linters:
     name: Run linters
     runs-on: ubuntu-latest
