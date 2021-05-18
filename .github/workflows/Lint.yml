@@ -26,5 +26,8 @@ jobs:
         uses: wearerequired/lint-action@v1
         with:
           continue_on_error: false
-          # black: true
           flake8: true
+          # E501: line too long (> 79 characters)
+          flake8_args: "--ignore E501"
+          # black: true
+          # mypy: true
