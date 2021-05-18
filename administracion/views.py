@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
-from .models import Item,Mozo
+from .models import Item, Mozo
 from .forms import ItemForm, MozoForm
 from django.contrib.auth.decorators import login_required
 
@@ -59,4 +59,3 @@ def mozoNew(request):
 @login_required
 def mozoList(request):
 	return render(request, 'admin/mozos.html', {'mozos':Mozo.objects.all()})
-
