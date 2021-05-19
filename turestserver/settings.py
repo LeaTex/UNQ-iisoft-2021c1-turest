@@ -24,9 +24,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-	'django.contrib.staticfiles',
-	'administracion.apps.AdministracionConfig',
-	'portal.apps.PortalConfig',
+    'django.contrib.staticfiles',
+    'administracion.apps.AdministracionConfig',
+    'portal.apps.PortalConfig',
 ]
 
 MIDDLEWARE = [
