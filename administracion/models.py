@@ -10,7 +10,6 @@ class Item(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
     updateDate = models.DateTimeField(blank=True, null=True)
 
-<<<<<<< HEAD
 class AsignacionMesa(models.Model):
 	author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
 	mozo = models.CharField(max_length=200)
@@ -22,28 +21,6 @@ class AsignacionMesa(models.Model):
 
 	def __str__(self):
 		return self.mozo
-
-class Test(models.Model):
-	author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-	nombre = models.CharField(max_length=200)
-	sector = models.PositiveIntegerField()
-
-	def publish(self):
-		self.updateDate = timezone.now()
-		self.save()
-
-	def __str__(self):
-		return self.nombre
-
-
-=======
-    def publish(self):
-        self.updateDate = timezone.now()
-        self.save()
->>>>>>> 4c2fffbf20e1c66234eb01a15ebed24daebafb1f
-
-    def __str__(self):
-        return self.name
 
 
 class Mozo(models.Model):
