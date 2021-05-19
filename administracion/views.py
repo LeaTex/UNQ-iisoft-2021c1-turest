@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
-from .models import Item,Mozo
-from .forms import ItemForm, MozoForm
+from .models import Item,Mozo, AsignacionMesa
+from .forms import ItemForm, MozoForm, AsignacionMesaForm
 from django.contrib.auth.decorators import login_required
 
 @login_required
@@ -59,4 +59,22 @@ def mozoNew(request):
 @login_required
 def mozoList(request):
 	return render(request, 'admin/mozos.html', {'mozos':Mozo.objects.all()})
+
+
+@login_required
+def asignacionNew(request):
+	if request.method == "POST":
+		form = AsignacionMesaForm(request.POST)
+		if form.is_valid():
+			asignacion = form.save(commit=False)
+			asignacion.author = request.user
+			asignacion.published_date = timezone.now()
+			asignacion.save()
+			return redirect('asignacionesList')
+	else:
+		return render(request, 'admin/asignacionMesa.html',{'form': AsignacionMesaForm()})
+
+@login_required
+def asignacionesList(request):
+	return render(request, 'admin/asignaciones.html', {'asignaciones': AsignacionMesa.objects.all()})
 

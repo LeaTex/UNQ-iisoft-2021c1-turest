@@ -9,4 +9,7 @@ urlpatterns = [
 	path('itemChange/<int:pk>/', views.itemChange, name='itemChange'),
 	path('mozos', views.mozoList, name='mozoList'),
 	path('mozoNew', views.mozoNew, name='mozoNew'),
+	path('asignacionMesa', views.asignacionNew, name='asignacionNew'),
+	path('asignaciones', views.asignacionesList, name='asignacionesList'),
+
 ]

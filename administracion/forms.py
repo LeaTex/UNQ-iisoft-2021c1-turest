@@ -1,5 +1,5 @@
 from django import forms
-from .models import Item, Mozo
+from .models import Item, Mozo, AsignacionMesa
 
 class ItemForm(forms.ModelForm):
 	class Meta:
@@ -10,3 +10,8 @@ class MozoForm(forms.ModelForm):
 	class Meta:
 		model = Mozo
 		fields = ('nombre', 'dni', 'direccion', 'telefono', 'mail')
+
+class AsignacionMesaForm(forms.ModelForm):
+	class Meta:
+		model = AsignacionMesa
+		fields = ('mozo', 'sector')

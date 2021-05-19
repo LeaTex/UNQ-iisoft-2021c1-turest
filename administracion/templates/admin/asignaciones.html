@@ -1,0 +1,16 @@
+{% extends 'panelStructure.html' %}
+{% block content %}
+	<div class="row mt-5">
+		<div class="col-12">
+			<h1 class="text-center">Mis asignaciones</h1>
+		</div>
+	</div>
+	{% for asignacion in asignaciones %}
+		<article class="row mt-3">
+			<div class="col-12">
+				<h2 class="text-primary">Mozo: {{asignacion.mozo}}</h2>
+				<p class="text-secondary">Sector: {{asignacion.sector}}</p>
+			</div>
+		</article>
+	{% endfor %}
+{% endblock %}
