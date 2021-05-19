@@ -28,6 +28,6 @@ jobs:
           continue_on_error: false
           flake8: true
           # E501: line too long (> 79 characters)
-          flake8_args: "--ignore E501"
+          flake8_args: "--max-line-length=127"
           # black: true
           # mypy: true
