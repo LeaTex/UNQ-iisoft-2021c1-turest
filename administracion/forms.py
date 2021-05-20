@@ -13,6 +13,7 @@ class MozoForm(forms.ModelForm):
         model = Mozo
         fields = ('nombre', 'dni', 'direccion', 'telefono', 'mail')
 
+
 class AsignacionMesaForm(forms.ModelForm):
     class Meta:
         model = AsignacionMesa

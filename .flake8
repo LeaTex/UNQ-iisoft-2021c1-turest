@@ -1,0 +1,9 @@
+[flake8]
+exclude =
+    .git,
+    .gitignore,
+    __pycache__,
+    venv,
+    .env
+
+max-line-length = 127
