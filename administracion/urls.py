@@ -12,5 +12,6 @@ urlpatterns = [
     path('asignacionMesa', views.asignacionNew, name='asignacionNew'),
     path('asignaciones', views.asignacionesList, name='asignacionesList'),
     path('mesaNew', views.mesaNew, name='mesaNew'),
-    path('mesas', views.mesasList, name='mesasList')
+    path('mesas', views.mesasList, name='mesasList'),
+    path('sectorNew', views.sectorNew, name='sectorNew')
 ]

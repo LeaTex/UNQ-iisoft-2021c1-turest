@@ -1,5 +1,5 @@
 from django import forms
-from .models import Item, Mozo, AsignacionMesa, Mesa
+from .models import Item, Mozo, AsignacionMesa, Mesa, Sector
 
 
 class ItemForm(forms.ModelForm):
@@ -24,4 +24,10 @@ class MesaForm(forms.ModelForm):
     class Meta:
         model = Mesa
         fields = ('mesa', 'capacidad')
+
+
+class SectorForm(forms.ModelForm):
+    class Meta:
+        model = Sector
+        fields = ('sector', 'mesa')
 
