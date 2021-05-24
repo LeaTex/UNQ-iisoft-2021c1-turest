@@ -102,10 +102,9 @@ def mesaNew(request):
 
 @login_required
 def mesasList(request):
-    return render(request, 'admin/mesasList.html', {'mesas': Mesa.objects.all()})
+    return render(request,admin/mesasList.html', {'mesas': Mesa.objects.all(),'sectores':Sector.objects.all()})
 
-
-@login_required
+login_required
 def sectorNew(request):
     if request.method == "POST":
         form = SectorForm(request.POST)
@@ -117,5 +116,3 @@ def sectorNew(request):
             return redirect('mesasList')
     else:
         return render(request, 'admin/sectorNew.html', {'form': SectorForm()})
-
-
