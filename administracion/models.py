@@ -38,3 +38,17 @@ class Mozo(models.Model):
 
     def __str__(self):
         return self.nombre
+
+
+class Mesa(models.Model):
+    author = models.ForeignKey("auth.User", on_delete=models.CASCADE)
+    mesa = models.CharField(max_length=200)
+    capacidad = models.PositiveIntegerField()
+
+    def publish(self):
+        self.updateDate = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.mesa
+
