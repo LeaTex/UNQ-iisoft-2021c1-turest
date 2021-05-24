@@ -1,6 +1,6 @@
 {% extends 'panelStructure.html' %}
 {% block content %}
-	<h1 class="text-center">Asignación de mesas:</h1>
+	<h1 class="text-center">Asignación de Sector:</h1>
 	<form method="POST" class="post-form">{% csrf_token %}
 		{{ form.as_p }}
 		<button type="submit" class="save btn btn-default">Asignar</button>
