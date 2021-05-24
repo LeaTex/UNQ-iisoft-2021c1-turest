@@ -102,7 +102,7 @@ def mesaNew(request):
 
 @login_required
 def mesasList(request):
-    return render(request,admin/mesasList.html', {'mesas': Mesa.objects.all(),'sectores':Sector.objects.all()})
+    return render(request, 'admin/mesasList.html', {'mesas': Mesa.objects.all(),'sectores':Sector.objects.all()})
 
 login_required
 def sectorNew(request):
