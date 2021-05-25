@@ -139,3 +139,42 @@ Sprints 4.
 
 - No se realizaron acciones.
 
+## Sprint 5
+
+**Scrum master:** Mailin Soñez
+
+### Planning
+
+![](img/sprint_5_planning.png)
+
+- Cantidad de story points comprometidos en el sprint: **19 SP**
+
+### Daily
+
+- A través de WhatsApp a diario.
+- A través de Google Meet al menos 2 veces por semana.
+
+### Refinamiento
+
+- Se realizó antes de la planning
+- A partir de esta reunión surgió la necesidad de  crear 3 user stories nuevas
+- Estas se agregaron al sprint actual
+
+### Review
+
+![](img/sprint_5_review.png)
+
+![](img/sprint_5_burndown.png)
+
+- Cantidad Story Points quemados: **19 SP**
+
+### Retrospective
+
+- No se realizaron acciones.
+
+### Calidad
+
+- Se investigó sobre el uso de actions, tests y otras tareas para integración continua
+- Configuramos Lint en nuestro proyecto
+
+![](img/sprint_5_lint.png)
