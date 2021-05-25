@@ -30,4 +30,3 @@ class SectorForm(forms.ModelForm):
     class Meta:
         model = Sector
         fields = ('sector', 'mesa')
-
