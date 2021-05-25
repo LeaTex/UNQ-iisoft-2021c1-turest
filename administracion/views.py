@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
-from .models import Item, Mozo, AsignacionMesa
-from .forms import ItemForm, MozoForm, AsignacionMesaForm
+from .models import Item, Mozo, AsignacionMesa, Mesa, Sector
+from .forms import ItemForm, MozoForm, AsignacionMesaForm, MesaForm, SectorForm
 from django.contrib.auth.decorators import login_required
 
 
@@ -85,3 +85,36 @@ def asignacionNew(request):
 @login_required
 def asignacionesList(request):
     return render(request, 'admin/asignaciones.html', {'asignaciones': AsignacionMesa.objects.all()})
+
+
+@login_required
+def mesaNew(request):
+    if request.method == "POST":
+        form = MesaForm(request.POST)
+        if form.is_valid():
+            mesa = form.save(commit=False)
+            mesa.author = request.user
+            mesa.published_date = timezone.now()
+            mesa.save()
+            return redirect('mesasList')
+    else:
+        return render(request, 'admin/mesaNew.html', {'form': MesaForm()})
+
+
+@login_required
+def mesasList(request):
+    return render(request, 'admin/mesasList.html', {'mesas': Mesa.objects.all(), 'sectores': Sector.objects.all()})
+
+
+@login_required
+def sectorNew(request):
+    if request.method == "POST":
+        form = SectorForm(request.POST)
+        if form.is_valid():
+            sector = form.save(commit=False)
+            sector.author = request.user
+            sector.published_date = timezone.now()
+            sector.save()
+            return redirect('mesasList')
+    else:
+        return render(request, 'admin/sectorNew.html', {'form': SectorForm()})

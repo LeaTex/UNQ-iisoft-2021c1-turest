@@ -11,19 +11,6 @@ class Item(models.Model):
     updateDate = models.DateTimeField(blank=True, null=True)
 
 
-class AsignacionMesa(models.Model):
-    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-    mozo = models.CharField(max_length=200)
-    sector = models.PositiveIntegerField()
-
-    def publish(self):
-        self.updateDate = timezone.now()
-        self.save()
-
-    def __str__(self):
-        return self.mozo
-
-
 class Mozo(models.Model):
     author = models.ForeignKey("auth.User", on_delete=models.CASCADE)
     nombre = models.CharField(max_length=200)
@@ -38,3 +25,42 @@ class Mozo(models.Model):
 
     def __str__(self):
         return self.nombre
+
+
+class Mesa(models.Model):
+    author = models.ForeignKey("auth.User", on_delete=models.CASCADE)
+    mesa = models.CharField(max_length=200)
+    capacidad = models.PositiveIntegerField()
+
+    def publish(self):
+        self.updateDate = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.mesa
+
+
+class Sector(models.Model):
+    author = models.ForeignKey("auth.User", on_delete=models.CASCADE)
+    sector = models.CharField(max_length=200)
+    mesa = models.ForeignKey(Mesa, on_delete=models.CASCADE)
+
+    def publish(self):
+        self.updateDate = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.sector
+
+
+class AsignacionMesa(models.Model):
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    mozo = models.ForeignKey(Mozo, on_delete=models.CASCADE)
+    sector = models.ForeignKey(Sector, on_delete=models.CASCADE)
+
+    def publish(self):
+        self.updateDate = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.mozo
