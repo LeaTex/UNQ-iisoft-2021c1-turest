@@ -100,11 +100,13 @@ def mesaNew(request):
     else:
         return render(request, 'admin/mesaNew.html', {'form': MesaForm()})
 
+
 @login_required
 def mesasList(request):
-    return render(request, 'admin/mesasList.html', {'mesas': Mesa.objects.all(),'sectores':Sector.objects.all()})
+    return render(request, 'admin/mesasList.html', {'mesas': Mesa.objects.all(), 'sectores': Sector.objects.all()})
 
-login_required
+
+@login_required
 def sectorNew(request):
     if request.method == "POST":
         form = SectorForm(request.POST)
