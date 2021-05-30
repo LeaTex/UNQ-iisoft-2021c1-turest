@@ -3,3 +3,6 @@ def isClient(user):
 
 def isAdmin(user):
     return user.groups.filter(name='Admin').exists()
+
+def isMozo(user):
+    return user.groups.filter(name='Mozo').exists()
