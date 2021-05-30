@@ -3,7 +3,7 @@ from django.utils import timezone
 from .models import Item, Mozo, AsignacionMesa, Mesa, Sector
 from .forms import ItemForm, MozoForm, AsignacionMesaForm, MesaForm, SectorForm
 from django.contrib.auth.decorators import login_required, user_passes_test
-from .userGruopsFilter import *
+from .userGroupsFilter import *
 
 @login_required
 @user_passes_test(isAdmin)
