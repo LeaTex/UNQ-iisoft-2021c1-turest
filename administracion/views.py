@@ -2,10 +2,11 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from .models import Item, Mozo, AsignacionMesa, Mesa, Sector
 from .forms import ItemForm, MozoForm, AsignacionMesaForm, MesaForm, SectorForm
-from django.contrib.auth.decorators import login_required
-
+from django.contrib.auth.decorators import login_required, user_passes_test
+from .userGruopsFilter import *
 
 @login_required
+@user_passes_test(isAdmin)
 def home(request):
     return render(request, 'admin/home.html', {'items': Item.objects.all()})
 
