@@ -3,3 +3,6 @@ def isClient(user):
 
 def isAdmin(user):
     return user.groups.filter(name='Admin').exists()
+
+def is_team(user):
+    return user.groups.filter(name__in=['Admin', 'Mozo']).exists()
