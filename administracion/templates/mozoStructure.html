@@ -18,22 +18,6 @@
 					<li><a class="nav-link text-white" href="{% url 'panel' %}">Inicio</a></li>
 					<li><a class="nav-link text-white" href="{% url 'home' %}">Ver menú</a></li>
 					<li><a class="nav-link text-white" href="{% url 'asignacionesList' %}"><span class="glyphicon glyphicon-plus"> Asignaciones</span></a></li>
-					<!-- Dropdown Mesas-->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mesas</a>
-						<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="{% url 'mesasList' %}">Mesas</span></a>
-							<a class="dropdown-item" href="{% url 'mesaNew' %}">Alta de mesa</span></a>
-						</div>
-					  </li>
-					<!-- Dropdown Sector-->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sectores</a>
-						<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-							<a class="nav-link text-white" href="{% url 'sectorNew' %}">Alta de sector</span></a>
-							<a class="nav-link text-white" href="{% url 'asignacionNew' %}">Asignacion Sector</span></a>
-						</div>
-					  </li>
 					<li><a class="nav-link text-white" href="{% url 'salir' %}">Salir</a></li>		
 				</ul>
 			</div>
