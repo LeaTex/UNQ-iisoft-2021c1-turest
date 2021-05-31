@@ -95,7 +95,7 @@ def asignacionNew(request):
 
 
 @login_required
-@user_passes_test(isAdmin)
+@user_passes_test(is_team)
 def asignacionesList(request):
     return render(request, 'admin/asignaciones.html', {'asignaciones': AsignacionMesa.objects.all()})
 
@@ -116,7 +116,7 @@ def mesaNew(request):
 
 
 @login_required
-@user_passes_test(isAdmin)
+@user_passes_test(is_team)
 def mesasList(request):
     return render(request, 'admin/mesasList.html', {'mesas': Mesa.objects.all(), 'sectores': Sector.objects.all()})
 
