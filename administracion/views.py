@@ -7,7 +7,12 @@ from .userGroupsFilter import *
 
 @login_required
 def home(request):
-    return render(request, 'admin/home.html', {'items': Item.objects.all()})
+    if isAdmin(request.user):
+        return render(request, 'admin/home.html', {'items': Item.objects.all()})
+    elif isMozo(request.user):
+        return render(request, 'mozo/home.html', {})
+    else:
+        return render(request, 'portal/home.html', {'items': Item.objects.all()})
 
 
 @login_required
