@@ -15,6 +15,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
+                {% if group in request.user.groups.all %}
 					<li><a class="nav-link text-white" href="{% url 'panel' %}">Inicio</a></li>
 					<li><a class="nav-link text-white" href="{% url 'itemList' %}">Ver menú</a></li>
 					<li><a class="nav-link text-white" href="{% url 'itemNew' %}"><span class="glyphicon glyphicon-plus"> Nueva entrada</span></a></li>
@@ -24,6 +25,7 @@
 					<li><a class="nav-link text-white" href="{% url 'mesaNew' %}"><span class="glyphicon glyphicon-plus"> Alta de mesa</span></a></li>
 					<li><a class="nav-link text-white" href="{% url 'sectorNew' %}"><span class="glyphicon glyphicon-plus"> Alta de sector</span></a></li>
 					<li><a class="nav-link text-white" href="{% url 'asignacionNew' %}"><span class="glyphicon glyphicon-plus"> Asignacion Sector</span></a></li>
+                {% endif %}
 					<li><a class="nav-link text-white" href="{% url 'asignacionesList' %}"><span class="glyphicon glyphicon-plus"> Asignaciones</span></a></li>
 					<!-- Dropdown Mesas-->
 					<li class="nav-item dropdown">

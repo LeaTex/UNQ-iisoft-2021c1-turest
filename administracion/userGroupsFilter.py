@@ -6,3 +6,6 @@ def isAdmin(user):
 
 def is_team(user):
     return user.groups.filter(name__in=['Admin', 'Mozo']).exists()
+
+def isMozo(user):
+    return user.groups.filter(name='Mozo').exists()
