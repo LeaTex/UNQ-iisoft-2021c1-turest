@@ -17,6 +17,11 @@
 		</article>
 {% endif %}
 
+{% for solicitud  in pedidos  %}
+<p>{{solicitud}}</p>
+{% endfor %}
+
+
 	{% for item in items %}
 		<article class="row mt-3">
 			<div class="col-12">
