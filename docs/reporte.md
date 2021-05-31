@@ -206,7 +206,7 @@ Sprints 4.
 
 ![](img/sprint_6_review2.png)
 
-![](img/sprint_5_burndown.png)
+![](img/sprint_6_burndown.png)
 
 - Cantidad Story Points quemados: **10 SP**
 
