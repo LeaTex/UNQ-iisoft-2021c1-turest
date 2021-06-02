@@ -1,6 +1,7 @@
 .vscode/
 .idea/
 .env/
+venv/
 .pytest_cache/
 __pycache__/
 *.cmd

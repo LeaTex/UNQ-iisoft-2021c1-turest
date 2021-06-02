@@ -4,6 +4,7 @@ exclude =
     .gitignore,
     __pycache__,
     venv,
-    .env
+    .env,
+    features
 
 max-line-length = 127
