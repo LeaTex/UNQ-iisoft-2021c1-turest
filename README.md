@@ -6,7 +6,8 @@
 
 ## Proyecto: TuRest
 
-![Lint status](https://github.com/LeaTex/unq-iisoft-2021c1-turest/workflows/Lint/badge.svg)
+[![Lint](https://github.com/LeaTex/unq-iisoft-2021c1-turest/actions/workflows/Lint.yml/badge.svg)](https://github.com/LeaTex/unq-iisoft-2021c1-turest/actions/workflows/Lint.yml) [![TDD Django](https://github.com/LeaTex/unq-iisoft-2021c1-turest/actions/workflows/tdd-django.yml/badge.svg)](https://github.com/LeaTex/unq-iisoft-2021c1-turest/actions/workflows/tdd-django.yml)
+
 
 **Equipo número**: 1  
 **Revisor asignado**: Warmi Guercio
