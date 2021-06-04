@@ -3,6 +3,9 @@ asgiref==3.3.4
 astroid==2.5.6
 atomicwrites==1.4.0
 attrs==20.3.0
+beautifulsoup4==4.9.3
+behave==1.2.6
+behave-django==1.4.0
 colorama==0.4.4
 coverage==5.5
 distlib==0.3.1
@@ -14,6 +17,8 @@ isort==5.8.0
 lazy-object-proxy==1.6.0
 mccabe==0.6.1
 packaging==20.9
+parse==1.19.0
+parse-type==0.5.2
 pluggy==0.13.1
 py==1.10.0
 pycodestyle==2.7.0
@@ -23,6 +28,7 @@ pyparsing==2.4.7
 pytest==6.2.3
 pytz==2021.1
 six==1.16.0
+soupsieve==2.2.1
 sqlparse==0.4.1
 toml==0.10.2
 tox==3.23.1

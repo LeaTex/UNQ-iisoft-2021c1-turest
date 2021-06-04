@@ -10,6 +10,9 @@ class Item(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
     updateDate = models.DateTimeField(blank=True, null=True)
 
+    def __str__(self):
+        return self.name
+
 
 class Mozo(models.Model):
     author = models.ForeignKey("auth.User", on_delete=models.CASCADE)

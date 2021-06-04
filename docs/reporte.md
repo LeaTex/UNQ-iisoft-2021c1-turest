@@ -226,3 +226,42 @@ Sprints 4.
 ### Calidad
 
 - No se realizaron acciones
+
+## Sprint 7
+
+**Scrum master:** Miguel Barraza
+
+### Planning
+
+![](img/sprint_6_planning.png)
+
+- Cantidad de story points comprometidos en el sprint: **39 SP**
+
+### Daily
+
+- A través de WhatsApp a diario.
+- A través de Google Meet al menos 2 veces por semana.
+
+### Refinamiento
+
+- Se realizó antes de la planning
+- A partir de esta reunión surgió la necesidad de  crear 2 user stories nuevas
+- Estas se agregaron al sprint actual
+
+### Review
+
+![](img/sprint_6_review.png)
+
+![](img/sprint_6_review2.png)
+
+![](img/sprint_6_burndown.png)
+
+- Cantidad Story Points quemados: **NNN SP**
+
+### Retrospective
+
+- No se realizaron acciones.
+
+### Calidad
+
+- No se realizaron acciones
