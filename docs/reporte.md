@@ -212,7 +212,16 @@ Sprints 4.
 
 ### Retrospective
 
-- No se realizaron acciones.
+- Realizamos una actividad basada en 3 preguntas disparadoras para ver la visión personal de cada integrante del grupo y conversar luego sobre lo que surgió.
+- Usamos un script de python para generar la ronda aleatoria e ir contestando las preguntas planteadas
+![](img/sprint_6_retrospective.png)
+
+ A partir de las respuestas de cada integrante del grupo y la posterior conversación, decidimos tomar las siguientes acciones:
+
+- Planificar con anticipación horario y fecha de las próximas ceremonias para una mejor organización
+- Centrarnos en la calidad antes que cantidad (ser más realistas con las próximas planning y con los tiempos de cada uno)
+- Armar subgrupos de trabajo
+- Mantener la calidad de comunicación que el grupo mantuvo desde el principio
 
 ### Calidad
 
