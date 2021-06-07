@@ -233,9 +233,9 @@ Sprints 4.
 
 ### Planning
 
-![](img/sprint_6_planning.png)
+![](img/sprint_7_planning3.png)
 
-- Cantidad de story points comprometidos en el sprint: ** 26 SP**
+- Cantidad de story points comprometidos en el sprint: **39 SP**
 
 ### Daily
 
@@ -244,10 +244,9 @@ Sprints 4.
 
 ### Refinamiento
 
-- A partir de esta reunión surgió la necesidad de  crear 2 user stories nuevas enfocadas en mejorar la experiencia de usuario.
+- Se realizó antes de la planning
+- A partir de esta reunión surgió la necesidad de  crear 2 user stories nuevas
 - Estas se agregaron al sprint actual
-
-Como parte de la mejora ux: se define mejorar la estética de la barra de  menú del panel de control y agregar un acceso al login desde la página de inicio.
 
 ### Review
 
@@ -257,31 +256,12 @@ Como parte de la mejora ux: se define mejorar la estética de la barra de  menú
 
 ![](img/sprint_6_burndown.png)
 
-- Cantidad Story Points quemados: **13 SP**
+- Cantidad Story Points quemados: **NNN SP**
 
 ### Retrospective
 
-- Realizamos una actividad basada en 3 preguntas disparadoras para ver la visión personal de cada integrante del grupo y conversar luego sobre lo que surgió.
-- Usamos un script de python para generar la ronda aleatoria e ir contestando las preguntas planteadas
-- se presentó principal enfoque en poner los valores como persona y como equipo en la reunión.
-
-Frases que surgieron de las preguntas de valores personal
-- Esto  representa mi sueño, mi tiempo, mi esfuerzo
-- No importa donde lo llevo, si no lo que está adentro.
-- Mis alas para volar
-- Mi forma de conectarme, tiene vinculos emocionales
-
-importante
-es bueno salirse de la zona técnica. porque siento que el resto de tu vida, no le importa  a nadie.
-
-en la actividad seleccionamos una palabra que valoriza nuestro equipo:
-- unión
-- comprensión
-- comunicación
-- empatía
-- acompañamiento
-
+- No se realizaron acciones.
 
 ### Calidad
 
-- Se implementó test de aceptación.
+- No se realizaron acciones
