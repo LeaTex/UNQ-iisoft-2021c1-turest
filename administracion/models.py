@@ -58,6 +58,8 @@ class Sector(models.Model):
 
 class AsignacionMesa(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    # mozo = models.CharField(max_length=200)
+    # sector = models.PositiveIntegerField()
     mozo = models.ForeignKey(Mozo, on_delete=models.CASCADE)
     sector = models.ForeignKey(Sector, on_delete=models.CASCADE)
 
