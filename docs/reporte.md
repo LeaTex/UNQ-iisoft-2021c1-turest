@@ -235,7 +235,7 @@ Sprints 4.
 
 ![](img/sprint_7_planning3.png)
 
-- Cantidad de story points comprometidos en el sprint: **39 SP**
+- Cantidad de story points comprometidos en el sprint: **31 SP**
 
 ### Daily
 
@@ -254,7 +254,7 @@ Sprints 4.
 
 ![](img/sprint_6_burndown.png)
 
-- Cantidad Story Points quemados: **NNN SP**
+- Cantidad Story Points quemados: **13 SP**
 
 ### Retrospective
 
