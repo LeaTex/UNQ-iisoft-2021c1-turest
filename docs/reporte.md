@@ -283,4 +283,5 @@ en la actividad seleccionamos una palabra que valoriza nuestro equipo:
 
 ### Calidad
 
-- No se realizaron acciones
+- Se implementó test de aceptación.
+- Se implementó base de datos de testing.
