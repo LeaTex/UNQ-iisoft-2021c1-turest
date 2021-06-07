@@ -250,9 +250,7 @@ Sprints 4.
 
 ### Review
 
-![](img/sprint_6_review.png)
-
-![](img/sprint_6_review2.png)
+![](img/sprint_7_review.png.png)
 
 ![](img/sprint_6_burndown.png)
 
