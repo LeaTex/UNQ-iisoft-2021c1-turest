@@ -1,0 +1,16 @@
+{% extends 'publicStructure.html' %}
+{% block content %}
+	<div class="row mt-5">
+		<div class="col-12">
+			<h1 class="text-center">Pedido</h1>
+			<p>Solicitud</p>
+		</div>
+	</div>
+    {% for item, cantidad  in pedidos %}
+		<article class="row mt-3">
+			<div class="col-12">
+				<h2 class="text-center"><a href="{% url 'itemView' pk=item.pk %}">{{item.name}}</a></h2>
+			</div>
+		</article>
+	{% endfor %}
+{% endblock %}
