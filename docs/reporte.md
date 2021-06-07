@@ -244,9 +244,10 @@ Sprints 4.
 
 ### Refinamiento
 
-- Se realizó antes de la planning
-- A partir de esta reunión surgió la necesidad de  crear 2 user stories nuevas
+- A partir de esta reunión surgió la necesidad de  crear 2 user stories nuevas enfocadas en mejorar la experiencia de usuario.
 - Estas se agregaron al sprint actual
+
+Como parte de la mejora ux: se define mejorar la estética de la barra de  menú del panel de control y agregar un acceso al login desde la página de inicio.
 
 ### Review
 
