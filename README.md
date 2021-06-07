@@ -6,7 +6,7 @@
 
 ## Proyecto: TuRest
 
-[![Lint](https://github.com/LeaTex/unq-iisoft-2021c1-turest/actions/workflows/Lint.yml/badge.svg)](https://github.com/LeaTex/unq-iisoft-2021c1-turest/actions/workflows/Lint.yml) [![TDD Django](https://github.com/LeaTex/unq-iisoft-2021c1-turest/actions/workflows/tdd-django.yml/badge.svg)](https://github.com/LeaTex/unq-iisoft-2021c1-turest/actions/workflows/tdd-django.yml)
+[![Lint](https://github.com/LeaTex/unq-iisoft-2021c1-turest/actions/workflows/Lint.yml/badge.svg)](https://github.com/LeaTex/unq-iisoft-2021c1-turest/actions/workflows/Lint.yml) [![TDD Django](https://github.com/LeaTex/unq-iisoft-2021c1-turest/actions/workflows/tdd-django.yml/badge.svg)](https://github.com/LeaTex/unq-iisoft-2021c1-turest/actions/workflows/tdd-django.yml) [![ATDD & BDD](https://github.com/LeaTex/unq-iisoft-2021c1-turest/actions/workflows/atdd-bdd.yml/badge.svg)](https://github.com/LeaTex/unq-iisoft-2021c1-turest/actions/workflows/atdd-bdd.yml)
 
 
 **Equipo número**: 1  
