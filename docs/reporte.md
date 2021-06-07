@@ -258,7 +258,25 @@ Sprints 4.
 
 ### Retrospective
 
-- No se realizaron acciones.
+- Realizamos una actividad basada en 3 preguntas disparadoras para ver la visión personal de cada integrante del grupo y conversar luego sobre lo que surgió.
+- Usamos un script de python para generar la ronda aleatoria e ir contestando las preguntas planteadas
+- se presentó principal enfoque en poner los valores como persona y como equipo en la reunión.
+
+Frases que surgieron de las preguntas de valores personal
+- Esto  representa mi sueño, mi tiempo, mi esfuerzo
+- No importa donde lo llevo, si no lo que está adentro.
+- Mis alas para volar
+- Mi forma de conectarme, tiene vinculos emocionales
+
+importante
+es bueno salirse de la zona técnica. porque siento que el resto de tu vida, no le importa  a nadie.
+
+en la actividad seleccionamos una palabra que valoriza nuestro equipo:
+- unión
+- comprensión
+- comunicación
+- empatía
+- acompañamiento
 
 ### Calidad
 
