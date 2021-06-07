@@ -1,14 +1,15 @@
 {% extends 'panelStructure.html' %}
 {% block content %}
-	<div class="card" style="width: 18rem;">
-		<div class="card-body">
-			<h2 class="card-title">{{item.name}}</h2>
-			<article class="card-text">
-				<p class="text-primary">{{item.description|linebreaksbr}}</p>
-				<p class="text-secondary">precio: ${{item.price}}</p>
-			</article>
-			<a href="{% url 'itemChange' pk=item.pk %}" class="card-link">Editar</a>
-			<a href="#" class="card-link">Eliminar</a>
-		</div>
+<div class="card" style="width: 18rem;">
+	<div class="card-body">
+		<h2 class="card-title">{{item.name}}</h2>
+		<article class="card-text">
+			<p class="text-primary">{{item.description|linebreaksbr}}</p>
+			<p class="text-secondary">precio: ${{item.price}}</p>
+		</article>
+		<a href="{% url 'itemChange' pk=item.pk %}" class="card-link">Editar</a>
+		<a href="#" class="card-link">Eliminar</a>
+		<a href="{% url 'itemList' %}" class="card-link">Pedir</a>
 	</div>
+</div>
 {% endblock %}

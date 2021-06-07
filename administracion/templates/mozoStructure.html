@@ -16,31 +16,8 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li><a class="nav-link text-white" href="{% url 'panel' %}">Inicio</a></li>
-					<li><a class="nav-link text-white" href="{% url 'itemList' %}">Ver menú</a></li>
-					<li><a class="nav-link text-white" href="{% url 'itemNew' %}"><span class="glyphicon glyphicon-plus"> Nueva entrada</span></a></li>
-                    <li><a class="nav-link text-white" href="{% url 'mozoList' %}">Mozos</a></li>
-                    <li><a class="nav-link text-white" href="{% url 'mozoNew' %}"><span class="glyphicon glyphicon-plus"> Alta de mozo</span></a></li>
-					<li><a class="nav-link text-white" href="{% url 'mesasList' %}"><span class="glyphicon glyphicon-plus"> Mesas</span></a></li>
-					<li><a class="nav-link text-white" href="{% url 'mesaNew' %}"><span class="glyphicon glyphicon-plus"> Alta de mesa</span></a></li>
-					<li><a class="nav-link text-white" href="{% url 'sectorNew' %}"><span class="glyphicon glyphicon-plus"> Alta de sector</span></a></li>
-					<li><a class="nav-link text-white" href="{% url 'asignacionNew' %}"><span class="glyphicon glyphicon-plus"> Asignacion Sector</span></a></li>
+					<li><a class="nav-link text-white" href="{% url 'home' %}">Ver menú</a></li>
 					<li><a class="nav-link text-white" href="{% url 'asignacionesList' %}"><span class="glyphicon glyphicon-plus"> Asignaciones</span></a></li>
-					<!-- Dropdown Mesas-->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mesas</a>
-						<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="{% url 'mesasList' %}">Mesas</span></a>
-							<a class="dropdown-item" href="{% url 'mesaNew' %}">Alta de mesa</span></a>
-						</div>
-					  </li>
-					<!-- Dropdown Sector-->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sectores</a>
-						<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-							<a class="nav-link text-white" href="{% url 'sectorNew' %}">Alta de sector</span></a>
-							<a class="nav-link text-white" href="{% url 'asignacionNew' %}">Asignacion Sector</span></a>
-						</div>
-					  </li>
 					<li><a class="nav-link text-white" href="{% url 'salir' %}">Salir</a></li>		
 				</ul>
 			</div>
