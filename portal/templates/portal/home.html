@@ -3,7 +3,7 @@
 	<div class="row mt-5">
 		<div class="col-12">
 			<h1 class="text-center">Oferta gastronómica</h1>
-			<p>A Continuación encontrarán todos los platos disponibles en el local</p>
+			<!-- <p>A Continuación encontrarán todos los platos disponibles en el local</p> -->
 		</div>
 	</div>
 {% if pedidoss|length > 0 %}
@@ -21,7 +21,9 @@
 <p>{{solicitud}}</p>
 {% endfor %}
 
-
+    {% if items|length == 0 %}
+    <h2 class="text-center">No hay ítems cargados.</h2>
+    {% endif %}
 	{% for item in items %}
 		<article class="row mt-3">
 			<div class="col-12">
