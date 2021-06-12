@@ -9,20 +9,28 @@
 	</head>
 	<body>
 		<div class="container" style="background-color:#ccc">
-        {% if request.user.is_authenticated %}
+        
         <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
-			<p class="navbar-brand text-white">Gestión</p>
+			<p class="navbar-brand text-white">TuRest</p>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Menú">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
-        <li><a class="nav-link text-white" href="{% url 'salir' %}">Salir</a></li>		
+		<li><a class="nav-link text-white" href="{% url 'home' %}">Inicio</a></li>
+		{% if not request.user.is_authenticated %}
+		<li><a class="nav-link text-white" href="{% url 'login' %}">Iniciar Sesión</a></li>
+		{% endif %}
+		{% if request.user.is_authenticated %}
+        <li><a class="nav-link text-white" href="{% url 'salir' %}">Salir</a></li>
+		{% endif %}		
         </ul>
 			</div>
 		</nav>
-        <p class="text-center">bienvenido {{request.user.username}}</p>
-        {% endif %}
+		{% if request.user.is_authenticated %}
+        <p class="text-center">Bienvenido {{request.user.username}}</p>
+		{% endif %}		
+
 			{% block content %}
 			{% endblock %}
 		</div>
