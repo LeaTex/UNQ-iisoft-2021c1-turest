@@ -3,10 +3,10 @@ from administracion.models import Item
 
 
 def home(request):
-    return render(request, 'portal/home.html', {'items': Item.objects.all(), 'pedidos':request.session.get('pedidos', [])})
+    return render(request, 'portal/home.html', {'items': Item.objects.all(), 'pedidos': request.session.get('pedidos', [])})
 
 
-#@login_required
+# @login_required
 def itemView(request, pk):
     if request.method == "POST":
         pedido = (request.POST['item'], request.POST['cantidad'])
