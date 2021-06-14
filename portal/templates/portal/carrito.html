@@ -13,7 +13,7 @@
 	{% for item, cantidad  in items %}
 		<article class="row mt-3">
 			<div class="col-12">
-				<p class="text-primary">({{cantidad}}) {{item}}</p>
+				<p class="text-primary">({{cantidad}}) {{item}} $ {{item.price}}</p>  
 			</div>
 		</article>
 	{% endfor %}
