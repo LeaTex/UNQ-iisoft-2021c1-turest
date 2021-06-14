@@ -342,7 +342,7 @@ Frases que surgieron de la pregunta 2:
 
 Frases que surgieron de la pregunta 3, utilizando la siguiente imágen como disparador:
 
-![](img/sprint_8_retro_img_preg3.png)
+![](img/sprint_8_retro_img_preg3.jpg)
 
 En la actividad realizada, los conceptos valorizados por nuestro equipo fueron:
 - Tener un espacio de comunicacion equilibrado donde los integrantes se sientan cómodos, redundando en mejorar las relaciones interpersonales, afectado positivamente al proyecto.
