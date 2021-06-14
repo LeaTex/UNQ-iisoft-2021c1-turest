@@ -285,3 +285,75 @@ en la actividad seleccionamos una palabra que valoriza nuestro equipo:
 
 - Se implementó test de aceptación.
 - Se implementó base de datos de testing.
+
+## Sprint 8
+
+**Scrum master:** Mariano Alvarez
+
+### Planning
+
+![](img/sprint_8_planning.png)
+
+- Cantidad de story points comprometidos en el sprint: **26 SP**
+
+### Daily
+
+- A través de WhatsApp a diario.
+- A través de Google Meet al menos 2 veces por semana.
+
+### Refinamiento
+
+- No se realizó.
+
+### Review
+
+![](img/sprint_8_review_0.png)
+
+![](img/sprint_8_review_1.png)
+
+![](img/sprint_8_burndown.png)
+
+- Cantidad Story Points quemados: **3 SP**
+
+### Retrospective
+
+- Realizamos una actividad basada en 3 preguntas disparadoras, con el fin de para ver la visión personal de cada integrante del grupo y conversar luego sobre lo que surgió.
+- Se utilizaron las herramientas web https://easyretro.io/ con el fin de explorar nuevas formas de realizar la ceremonia y la herramienta Google Meet https://meet.google.com/. Todos los integrantes del equipo iniciaron sesión y atendieron las consignas del Scrum Master
+- Se presentaron enfoques para encontrar el mejor espacio de trabajo, entender que el valor de la comunicación, saber que el proyecto (cualquier sea) es llevado adelante por personas, que no sólo se compone de objetivos que cumplir, técnicas y herramientas a utilizar, estrategias de trabajo, etc.
+
+![](img/sprint_8_retro_easyretro.png)
+
+Frases que surgieron de la pregunta 1:
+
+- Es el espacio donde:
+-- Obtengo mi mejor versión
+-- Me desconecto del resto de las cosas
+-- Me siento con más confianza, me siento más seguro.
+-- Paso obstáculos.
+-- Me encuetro con los demás.
+
+Frases que surgieron de la pregunta 2:
+
+-La herramienta comunicacional:
+-- Es sencilla
+-- De uso diario.
+-- Es accesible.
+-- Es como estar en la presencialidad.
+
+Frases que surgieron de la pregunta 3, utilizando la siguiente imágen como disparador:
+
+![](img/sprint_8_retro_img_preg3.png)
+
+- No importa donde lo llevo, si no lo que está adentro.
+- Mis alas para volar.
+- Mi forma de conectarme, tiene vinculos emocionales.
+
+
+En la actividad realizada, los conceptos valorizados por nuestro equipo fueron:
+- Tener un espacio de comunicacion equilibrado donde los integrantes se sientan cómodos, redundando en mejorar las relaciones interpersonales, afectado positivamente al proyecto.
+- La ceremonia preferida es la Retrospectiva.
+- Utilizar nuevas herramientas para llevar adelante esta ceremonia.
+
+### Calidad
+
+- No se implementó
