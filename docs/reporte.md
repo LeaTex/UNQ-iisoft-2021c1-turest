@@ -294,7 +294,7 @@ en la actividad seleccionamos una palabra que valoriza nuestro equipo:
 
 ![](img/sprint_8_planning.png)
 
-- Cantidad de story points comprometidos en el sprint: **23 SP**
+- Cantidad de story points comprometidos en el sprint: **21 SP**
 
 ### Daily
 
@@ -307,13 +307,13 @@ en la actividad seleccionamos una palabra que valoriza nuestro equipo:
 
 ### Review
 
-![](img/sprint_8_review_0.png)
+![](img/sprint_8_review_open.png)
 
-![](img/sprint_8_review_1.png)
+![](img/sprint_8_review_close.png)
 
 ![](img/sprint_8_burndown.png)
 
-- Cantidad Story Points quemados: **18 SP**
+- Cantidad Story Points quemados: **16 SP**
 
 ### Retrospective
 
