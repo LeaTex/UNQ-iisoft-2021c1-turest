@@ -344,11 +344,6 @@ Frases que surgieron de la pregunta 3, utilizando la siguiente imágen como disp
 
 ![](img/sprint_8_retro_img_preg3.png)
 
-- No importa donde lo llevo, si no lo que está adentro.
-- Mis alas para volar.
-- Mi forma de conectarme, tiene vinculos emocionales.
-
-
 En la actividad realizada, los conceptos valorizados por nuestro equipo fueron:
 - Tener un espacio de comunicacion equilibrado donde los integrantes se sientan cómodos, redundando en mejorar las relaciones interpersonales, afectado positivamente al proyecto.
 - La ceremonia preferida es la Retrospectiva.
