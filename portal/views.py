@@ -4,7 +4,10 @@ from administracion.models import Item
 
 
 def home(request):
-    tienePedidos = len(request.session['pedidos'])>0
+    if 'pedidos' in request.session:
+        tienePedidos = len(request.session['pedidos'])>0
+    else:
+        tienePedidos = False
     return render(request, 'portal/home.html', {'items': Item.objects.all(), 'pedidos': tienePedidos})
 
 
