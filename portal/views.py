@@ -29,11 +29,13 @@ def itemView(request, pk):
 def cartView(request):
     tienePedidos = len(request.session['pedidos']) > 0
     lista = []
+    precioTotal = 0
     for id, cantidad in request.session['pedidos']:
         print("buscando", id)
         item = Item.objects.get(pk=int(id))
+        precioTotal += item.price
         lista.append((item, cantidad))
-    return render(request, 'portal/carrito.html', {'items': lista, 'pedidos': tienePedidos})
+    return render(request, 'portal/carrito.html', {'items': lista, 'pedidos': tienePedidos, 'total': precioTotal})
 
 
 @login_required
