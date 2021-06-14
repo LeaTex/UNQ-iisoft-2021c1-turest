@@ -307,9 +307,9 @@ en la actividad seleccionamos una palabra que valoriza nuestro equipo:
 
 ### Review
 
-![](img/sprint_8_review_0.png)
+![](img/sprint_8_review_open.png)
 
-![](img/sprint_8_review_1.png)
+![](img/sprint_8_review_close.png)
 
 ![](img/sprint_8_burndown.png)
 
