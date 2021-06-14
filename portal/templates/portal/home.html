@@ -6,20 +6,15 @@
 			<!-- <p>A Continuación encontrarán todos los platos disponibles en el local</p> -->
 		</div>
 	</div>
-{% if pedidoss|length > 0 %}
+{% if pedidos %}
 		<article class="row mt-5">
 			<div class="col-12">
             <ul>
 				<li></li><a href="{% url 'cartView' %}">Ver pedido</a></li>
-				<li></li><a href="{% url 'cartConfirm' %}">Confirmar pedido</a></li>
-            </ul>
+           </ul>
 			</div>
 		</article>
 {% endif %}
-
-{% for solicitud  in pedidos  %}
-<p>{{solicitud}}</p>
-{% endfor %}
 
     {% if items|length == 0 %}
     <h2 class="text-center">No hay ítems cargados.</h2>
