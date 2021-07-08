@@ -23,3 +23,16 @@ class Cart():
         list = self.session['pedidos']
         list.append(pedido)
         self.session['pedidos'] = list
+    
+    def getItems(self):
+        lista = []
+        self.precioTotal = 0
+        for id, cantidad in self.session.get('pedidos', []):
+            item = Item.objects.get(pk=int(id))
+            self.precioTotal += float(item.price) * float(cantidad)
+            lista.append((item, cantidad))
+        return lista
+    
+    def getPrice(self):
+        """ funcion parcial, antes se debe llamar a getItems. """
+        return self.precioTotal
