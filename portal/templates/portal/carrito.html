@@ -8,10 +8,12 @@
 	</div>
 
 
-{% for item, cantidad  in items %}
+{% for id, item, cantidad  in items %}
 		<article class="row mt-3">
 			<div class="col-12">
 				<p class="text-primary">({{cantidad}}) {{item}} $ {{item.price}}</p>
+				<a href="{% url 'cartItemChange' pk=id %}" class="btn">Modificar cantidad</a><br />
+				<a href="{% url 'cartItemDelete' pk=id %}" class="btn">Eliminar</a>
 			</div>
 		</article>
 	{% empty %}

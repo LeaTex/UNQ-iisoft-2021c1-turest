@@ -20,8 +20,8 @@ class Cart():
         self.limpiar()
 
     def agregarPedido(self):
-        #id = self.newId()
-        pedido = (self.request.POST['item'], self.request.POST['cantidad'])
+        id = self.newId()
+        pedido = (id, self.request.POST['item'], self.request.POST['cantidad'])
         list = self.session['pedidos']
         list.append(pedido)
         self.session['pedidos'] = list
@@ -29,12 +29,26 @@ class Cart():
     def getItems(self):
         lista = []
         self.precioTotal = 0
-        for id, cantidad in self.session.get('pedidos', []):
-            item = Item.objects.get(pk=int(id))
+        for id, itemId, cantidad in self.session.get('pedidos', []):
+            item = Item.objects.get(pk=int(itemId))
             self.precioTotal += float(item.price) * float(cantidad)
-            lista.append((item, cantidad))
+            lista.append((id, item, cantidad))
         return lista
 
     def getPrice(self):
         """ funcion parcial, antes se debe llamar a getItems. """
         return self.precioTotal
+	
+    def get(self, id):
+        """ retorna el pedido con el id solicitado """
+        for tuple  in self.session['pedidos']:
+            if tuple[0] == id:
+                return tuple
+        else:
+            raise ValueError("el id de pedido no es válido.")
+    
+    def borrar(self, id):
+        pedido = self.get(id)
+        list = self.session['pedidos']
+        list.remove(pedido)
+        self.session['pedidos'] = list

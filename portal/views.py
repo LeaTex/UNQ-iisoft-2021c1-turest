@@ -35,3 +35,10 @@ def cartConfirm(request):
 def cartClear(request):
     Cart(request).limpiar()
     return redirect('cartView')
+
+def cartItemDelete(request, pk):
+    Cart(request).borrar(pk)
+    return redirect('cartView')
+
+def cartItemChange(request, pk):
+    return redirect('cartView')
