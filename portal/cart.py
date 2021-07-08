@@ -38,7 +38,7 @@ class Cart():
     def getPrice(self):
         """ funcion parcial, antes se debe llamar a getItems. """
         return self.precioTotal
-	
+
     def get(self, id):
         """ retorna el pedido con el id solicitado """
         for tuple  in self.session['pedidos']:
@@ -46,9 +46,17 @@ class Cart():
                 return tuple
         else:
             raise ValueError("el id de pedido no es válido.")
-    
+
     def borrar(self, id):
         pedido = self.get(id)
         list = self.session['pedidos']
         list.remove(pedido)
         self.session['pedidos'] = list
+
+    def modificarCantidad(self, id):
+        pedido = list(self.get(id))
+        lista = self.session['pedidos']
+        position=lista.index(pedido)
+        pedido[2] = int(self.request.POST['cantidad'])
+        lista[position]=tuple(pedido)
+        self.session['pedidos'] = lista

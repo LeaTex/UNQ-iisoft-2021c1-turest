@@ -41,4 +41,9 @@ def cartItemDelete(request, pk):
     return redirect('cartView')
 
 def cartItemChange(request, pk):
-    return redirect('cartView')
+    if request.method == "POST":
+        Cart(request).modificarCantidad(pk)
+        return redirect('cartView')
+    else:
+        id, itemId, cantidad = Cart(request).get(pk)
+        return render(request, 'portal/cartItem.html', {'id':id, 'cantidad':cantidad, 'item': get_object_or_404(Item, pk=itemId)})
