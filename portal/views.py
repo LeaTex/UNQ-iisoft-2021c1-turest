@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from administracion.models import Item
+from .cart import Cart
 
 
 def home(request):
@@ -14,13 +15,7 @@ def home(request):
 # @login_required
 def itemView(request, pk):
     if request.method == "POST":
-        pedido = (request.POST['item'], request.POST['cantidad'])
-        if 'pedidos' in request.session:
-            list = request.session['pedidos']
-            list.append(pedido)
-            request.session['pedidos'] = list
-        else:
-            request.session['pedidos'] = [pedido]
+        Cart(request).agregarPedido()
         return redirect('home')
     else:
         return render(request, 'portal/itemView.html', {'item': get_object_or_404(Item, pk=pk)})
@@ -40,5 +35,5 @@ def cartView(request):
 
 @login_required
 def cartConfirm(request):
-    request.session['pedidos'] = []
+    Cart(request).registrar()
     return render(request, 'portal/confirmado.html', {})
