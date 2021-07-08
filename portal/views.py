@@ -23,10 +23,15 @@ def itemView(request, pk):
 
 def cartView(request):
     carrito = Cart(request)
-    return render(request, 'portal/carrito.html', {'items': carrito.getItems(), 'total': carrito.getPrice()})
+    lista = carrito.getItems()
+    return render(request, 'portal/carrito.html', {'items': lista, 'total': carrito.getPrice(), "pedidos":len(lista)>0})
 
 
 @login_required
 def cartConfirm(request):
     Cart(request).registrar()
     return render(request, 'portal/confirmado.html', {})
+
+def cartClear(request):
+    Cart(request).limpiar()
+    return redirect('cartView')
