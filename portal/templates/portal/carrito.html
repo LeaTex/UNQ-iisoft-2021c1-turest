@@ -11,9 +11,9 @@
 {% for id, item, cantidad  in items %}
 		<article class="row mt-3">
 			<div class="col-12">
-				<p class="text-primary">({{cantidad}}) {{item}} $ {{item.price}}</p>
-				<a href="{% url 'cartItemChange' pk=id %}" class="btn">Modificar cantidad</a><br />
-				<a href="{% url 'cartItemDelete' pk=id %}" class="btn">Eliminar</a>
+				<p class="text-primary">({{cantidad}}) {{item}} $ {{item.price}}
+				<a href="{% url 'cartItemChange' pk=id %}" class="btn btn-primary btn-sm">Modificar cantidad</a>
+				<a href="{% url 'cartItemDelete' pk=id %}" class="btn btn-secondary btn-sm">Eliminar</a></p>
 			</div>
 		</article>
 	{% empty %}
@@ -27,7 +27,7 @@
             <ul>
 				<p class="text-primary">Total: $ {{total}}</p>
 				<a href="{% url 'cartConfirm' %}" class="btn btn-success">Confirmar pedido</a>
-				<a href="{% url 'cartClear' %}" class="btn btn">Borrar carrito</a>
+				<a href="{% url 'cartClear' %}" class="btn btn-danger">Borrar carrito</a>
            </ul>
 			</div>
 		</article>
