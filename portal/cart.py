@@ -1,8 +1,9 @@
 from administracion.models import Item
 
+
 class Cart():
     def __init__(self, request):
-        if not 'pedidos' in request.session:
+        if not ('pedidos' in request.session):
             request.session['pedidos'] = []
             request.session['pedidos_id'] = 0
         self.session = request.session
@@ -13,7 +14,6 @@ class Cart():
         return self.session['pedidos_id']-1
 
     def limpiar(self):
-        print("borramos pedidos")
         del self.session['pedidos']
 
     def registrar(self):
@@ -41,7 +41,7 @@ class Cart():
 
     def get(self, id):
         """ retorna el pedido con el id solicitado """
-        for tuple  in self.session['pedidos']:
+        for tuple in self.session['pedidos']:
             if tuple[0] == id:
                 return tuple
         else:
@@ -56,7 +56,7 @@ class Cart():
     def modificarCantidad(self, id):
         pedido = list(self.get(id))
         lista = self.session['pedidos']
-        position=lista.index(pedido)
+        position = lista.index(pedido)
         pedido[2] = int(self.request.POST['cantidad'])
-        lista[position]=tuple(pedido)
+        lista[position] = tuple(pedido)
         self.session['pedidos'] = lista

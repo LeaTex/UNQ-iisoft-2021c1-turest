@@ -24,7 +24,7 @@ def itemView(request, pk):
 def cartView(request):
     carrito = Cart(request)
     lista = carrito.getItems()
-    return render(request, 'portal/carrito.html', {'items': lista, 'total': carrito.getPrice(), "pedidos":len(lista)>0})
+    return render(request, 'portal/carrito.html', {'items': lista, 'total': carrito.getPrice(), "pedidos": len(lista) > 0})
 
 
 @login_required
@@ -32,13 +32,16 @@ def cartConfirm(request):
     Cart(request).registrar()
     return render(request, 'portal/confirmado.html', {})
 
+
 def cartClear(request):
     Cart(request).limpiar()
     return redirect('cartView')
 
+
 def cartItemDelete(request, pk):
     Cart(request).borrar(pk)
     return redirect('cartView')
+
 
 def cartItemChange(request, pk):
     if request.method == "POST":
@@ -46,4 +49,5 @@ def cartItemChange(request, pk):
         return redirect('cartView')
     else:
         id, itemId, cantidad = Cart(request).get(pk)
-        return render(request, 'portal/cartItem.html', {'id':id, 'cantidad':cantidad, 'item': get_object_or_404(Item, pk=itemId)})
+        return render(request, 'portal/cartItem.html', {
+            'id': id, 'cantidad': cantidad, 'item': get_object_or_404(Item, pk=itemId)})
