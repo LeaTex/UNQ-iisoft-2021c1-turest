@@ -20,7 +20,6 @@ def order_with_two_items(context, mila_amount, mila_item_name, helado_amount, he
     context.test.client.post(f'/itemView/{item.id}/', {'cantidad': int(helado_amount), 'item': item.id})
 
     context.response = context.test.client.get('/cartView/')
-    print(str(context.response.content))
     context.test.assertContains(context.response, f'({mila_amount}) {mila_item_name}')
     context.test.assertContains(context.response, f'({helado_amount}) {helado_item_name}')
     context.test.assertContains(context.response, f'{total_cost}')
@@ -50,3 +49,20 @@ def updated_order_with_one_item(context, helado_amount, helado_item_name, total_
 @then(u'the order does not show any "{mila_item_name}"')
 def updated_order_without_deleted_item(context, mila_item_name):
     context.test.assertNotContains(context.response, mila_item_name)
+
+
+@given(u'an order with "{mila_amount}" "{mila_item_name}" of "{total_cost}" pesos total cost')
+def order_with_one_item(context, mila_amount, mila_item_name, total_cost):
+
+    item = Item.objects.filter(name=mila_item_name).first()
+    context.test.client.post(f'/itemView/{item.id}/', {'cantidad': int(mila_amount), 'item': item.id})
+
+    context.response = context.test.client.get('/cartView/')
+    context.test.assertContains(context.response, f'({mila_amount}) {mila_item_name}')
+    context.test.assertContains(context.response, f'{total_cost}')
+
+
+@then(u'the message "{message}" is displayed')
+def empty_order_message_displayed(context, message):
+    context.response = context.test.client.get('/cartView/')
+    context.test.assertContains(context.response, message)
