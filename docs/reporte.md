@@ -379,7 +379,7 @@ En la actividad realizada, los conceptos valorizados por nuestro equipo fueron:
 
 ![](img/sprint_9_review_close.jpeg)
 
-![](img/sprint_8_burndown.png)
+![](img/sprint_9_burndown.png)
 
 - Cantidad Story Points quemados: **8 SP**
 
@@ -388,18 +388,48 @@ En la actividad realizada, los conceptos valorizados por nuestro equipo fueron:
 - Realizamos la actividad "Lo bueno, malo y feo"
 - Se utilizaron las herramientas de google docs y meets
 
-- Lo bueno:
+Lo bueno: 
 
-- Lo malo:
+- Tecnico/Producto
+-
+-- Las tecnologías de desarrolo utilizadas
+-- El producto es util
 
-- Lo feo:
+- Humano/equipo
 
+-- Comunicación
+-- Sinergia
 
-- Puntos de mejora detectados: 
+Lo malo:
+
+- Tecnico/Producto
+
+-- Falta de test
+
+- Humano/equipo
+
+-- Falta tiempo
+-- Imposibilidad de rueniones presenciales
+
+Lo feo:
+
+- Tecnico/Producto
+
+-- Mejorar la UI de TuRest
+
+- Humano/equipo
+
+-- Repartir mejor la carga de trabajo entre los integrantes
+
+- Puntos de mejora detectados en el caso de un siguiente Sprint:
+
+-- Agregar cobertura de test para todas las US.
+-- Trabajar mas sobre el front-end de la aplicación. Vamos a buscar feedback de usuarios para mejor la UX.
+-- Dividir mas equitativamente la carga de trabajo en el equipo. 
 
 
 ![](img/retro.PNG)
 
 ### Calidad
 
-- Se implementó un test para la US  "eliminar item"
+- Se implementó un test para la US  "Eliminar un item del pedido"
