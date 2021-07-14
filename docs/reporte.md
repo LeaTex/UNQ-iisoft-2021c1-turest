@@ -360,7 +360,7 @@ En la actividad realizada, los conceptos valorizados por nuestro equipo fueron:
 
 ### Planning
 
-![](img/sprint_9_planning.png)
+![](img/sprint_9_planning.png.jpeg)
 
 - Cantidad de story points comprometidos en el sprint: **8 SP**
 
