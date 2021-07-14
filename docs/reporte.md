@@ -399,4 +399,4 @@ En la actividad realizada, los conceptos valorizados por nuestro equipo fueron:
 
 ### Calidad
 
-- No se implementó
+- Se implementó un test para la US  "eliminar item"
