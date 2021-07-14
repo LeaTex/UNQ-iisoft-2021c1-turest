@@ -395,7 +395,8 @@ En la actividad realizada, los conceptos valorizados por nuestro equipo fueron:
 |- El producto es util|- Falta tiempo|- Repartir mejor la carga de trabajo entre los integrantes|
 |- Comunicación|- Imposibilidad de rueniones presenciales|.|
 |- Sinergia|.|.|
-
+|- Es accesible|.|.|
+|- Esta pública en internet|.|.|
 
 Puntos de mejora detectados en el caso de un siguiente Sprint:
  - Agregar cobertura de test para todas las US.
