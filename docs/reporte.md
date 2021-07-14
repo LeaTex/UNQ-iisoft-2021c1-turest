@@ -397,6 +397,9 @@ En la actividad realizada, los conceptos valorizados por nuestro equipo fueron:
 
 - Puntos de mejora detectados: 
 
+
+![](img/retro.PNG)
+
 ### Calidad
 
 - Se implementó un test para la US  "eliminar item"
