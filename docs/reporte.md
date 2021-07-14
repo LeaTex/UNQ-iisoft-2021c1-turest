@@ -386,33 +386,21 @@ En la actividad realizada, los conceptos valorizados por nuestro equipo fueron:
 ### Retrospective
 
 - Realizamos la actividad "Lo bueno, malo y feo"
-- Se utilizaron las herramientas de google docs y meets
+- Se utilizaron las herramientas de Google Docs y Meets
 
-Lo bueno: 
 
- - Las tecnologías de desarrolo utilizadas
- - El producto es util
- - Comunicación
- - Sinergia
+| ![](img/the_good.png) | ![](img/the_bad.png) | ![](img/the_ugly.png) |
+--- | --- | ---
+|- Las tecnologías de desarrolo utilizadas|- Falta de test|- Mejorar la UI de TuRest|
+|- El producto es util|- Falta tiempo|- Repartir mejor la carga de trabajo entre los integrantes|
+|- Comunicación|- Imposibilidad de rueniones presenciales|.|
+|- Sinergia|.|.|
 
-Lo malo:
-
- - Falta de test
- - Falta tiempo
- - Imposibilidad de rueniones presenciales
-
-Lo feo:
-
- - Mejorar la UI de TuRest
- - Repartir mejor la carga de trabajo entre los integrantes
 
 Puntos de mejora detectados en el caso de un siguiente Sprint:
  - Agregar cobertura de test para todas las US.
  - Trabajar mas sobre el front-end de la aplicación. Vamos a buscar feedback de usuarios para mejor la UX.
  - Dividir mas equitativamente la carga de trabajo en el equipo. 
-
-
-![](img/retro.PNG)
 
 ### Calidad
 
