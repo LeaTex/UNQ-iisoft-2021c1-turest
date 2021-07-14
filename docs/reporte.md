@@ -371,51 +371,31 @@ En la actividad realizada, los conceptos valorizados por nuestro equipo fueron:
 
 ### Refinamiento
 
-- No se realizó.
+- Se realizó antes de la planning
+- Se identificó que modificar pedido es una Epica
+- Se crearon las 4 US que arman la épica y se agregaron al backlog
 
 ### Review
 
-![](img/sprint_8_review_open.png)
-
-![](img/sprint_8_review_close.png)
+![](img/sprint_9_review_close.jpeg)
 
 ![](img/sprint_8_burndown.png)
 
-- Cantidad Story Points quemados: **16 SP**
+- Cantidad Story Points quemados: **8 SP**
 
 ### Retrospective
 
-- Realizamos una actividad basada en 3 preguntas disparadoras, con el fin de para ver la visión personal de cada integrante del grupo y conversar luego sobre lo que surgió.
-- Se utilizaron las herramientas web https://easyretro.io/ con el fin de explorar nuevas formas de realizar la ceremonia y la herramienta Google Meet https://meet.google.com/. Todos los integrantes del equipo iniciaron sesión y atendieron las consignas del Scrum Master
-- Se presentaron enfoques para encontrar el mejor espacio de trabajo, entender que el valor de la comunicación, saber que el proyecto (cualquier sea) es llevado adelante por personas, que no sólo se compone de objetivos que cumplir, técnicas y herramientas a utilizar, estrategias de trabajo, etc.
+- Realizamos la actividad "Lo bueno, malo y feo"
+- Se utilizaron las herramientas de google docs y meets
 
-![](img/sprint_8_retro_easyretro.png)
+- Lo bueno:
 
-Frases que surgieron de la pregunta 1:
+- Lo malo:
 
-- Es el espacio donde:
--- Obtengo mi mejor versión
--- Me desconecto del resto de las cosas
--- Me siento con más confianza, me siento más seguro.
--- Paso obstáculos.
--- Me encuetro con los demás.
+- Lo feo:
 
-Frases que surgieron de la pregunta 2:
 
--La herramienta comunicacional:
--- Es sencilla
--- De uso diario.
--- Es accesible.
--- Es como estar en la presencialidad.
-
-Frases que surgieron de la pregunta 3, utilizando la siguiente imágen como disparador:
-
-![](img/sprint_8_retro_img_preg3.jpg)
-
-En la actividad realizada, los conceptos valorizados por nuestro equipo fueron:
-- Tener un espacio de comunicacion equilibrado donde los integrantes se sientan cómodos, redundando en mejorar las relaciones interpersonales, afectado positivamente al proyecto.
-- La ceremonia preferida es la Retrospectiva.
-- Utilizar nuevas herramientas para llevar adelante esta ceremonia.
+- Puntos de mejora detectados: 
 
 ### Calidad
 
