@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from administracion.models import Item
+from .cart import Cart
 
 
 def home(request):
@@ -14,31 +15,39 @@ def home(request):
 # @login_required
 def itemView(request, pk):
     if request.method == "POST":
-        pedido = (request.POST['item'], request.POST['cantidad'])
-        if 'pedidos' in request.session:
-            list = request.session['pedidos']
-            list.append(pedido)
-            request.session['pedidos'] = list
-        else:
-            request.session['pedidos'] = [pedido]
+        Cart(request).agregarPedido()
         return redirect('home')
     else:
         return render(request, 'portal/itemView.html', {'item': get_object_or_404(Item, pk=pk)})
 
 
 def cartView(request):
-    tienePedidos = len(request.session['pedidos']) > 0
-    lista = []
-    precioTotal = 0
-    for id, cantidad in request.session['pedidos']:
-        print("buscando", id)
-        item = Item.objects.get(pk=int(id))
-        precioTotal += float(item.price) * float(cantidad)
-        lista.append((item, cantidad))
-    return render(request, 'portal/carrito.html', {'items': lista, 'pedidos': tienePedidos, 'total': precioTotal})
+    carrito = Cart(request)
+    lista = carrito.getItems()
+    return render(request, 'portal/carrito.html', {'items': lista, 'total': carrito.getPrice(), "pedidos": len(lista) > 0})
 
 
 @login_required
 def cartConfirm(request):
-    request.session['pedidos'] = []
+    Cart(request).registrar()
     return render(request, 'portal/confirmado.html', {})
+
+
+def cartClear(request):
+    Cart(request).limpiar()
+    return redirect('cartView')
+
+
+def cartItemDelete(request, pk):
+    Cart(request).borrar(pk)
+    return redirect('cartView')
+
+
+def cartItemChange(request, pk):
+    if request.method == "POST":
+        Cart(request).modificarCantidad(pk)
+        return redirect('cartView')
+    else:
+        id, itemId, cantidad = Cart(request).get(pk)
+        return render(request, 'portal/cartItem.html', {
+            'id': id, 'cantidad': cantidad, 'item': get_object_or_404(Item, pk=itemId)})
