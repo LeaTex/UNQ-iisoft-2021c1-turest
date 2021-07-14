@@ -390,42 +390,26 @@ En la actividad realizada, los conceptos valorizados por nuestro equipo fueron:
 
 Lo bueno: 
 
-- Tecnico/Producto
--
--- Las tecnologías de desarrolo utilizadas
--- El producto es util
-
-- Humano/equipo
-
--- Comunicación
--- Sinergia
+ - Las tecnologías de desarrolo utilizadas
+ - El producto es util
+ - Comunicación
+ - Sinergia
 
 Lo malo:
 
-- Tecnico/Producto
-
--- Falta de test
-
-- Humano/equipo
-
--- Falta tiempo
--- Imposibilidad de rueniones presenciales
+ - Falta de test
+ - Falta tiempo
+ - Imposibilidad de rueniones presenciales
 
 Lo feo:
 
-- Tecnico/Producto
+ - Mejorar la UI de TuRest
+ - Repartir mejor la carga de trabajo entre los integrantes
 
--- Mejorar la UI de TuRest
-
-- Humano/equipo
-
--- Repartir mejor la carga de trabajo entre los integrantes
-
-- Puntos de mejora detectados en el caso de un siguiente Sprint:
-
--- Agregar cobertura de test para todas las US.
--- Trabajar mas sobre el front-end de la aplicación. Vamos a buscar feedback de usuarios para mejor la UX.
--- Dividir mas equitativamente la carga de trabajo en el equipo. 
+Puntos de mejora detectados en el caso de un siguiente Sprint:
+ - Agregar cobertura de test para todas las US.
+ - Trabajar mas sobre el front-end de la aplicación. Vamos a buscar feedback de usuarios para mejor la UX.
+ - Dividir mas equitativamente la carga de trabajo en el equipo. 
 
 
 ![](img/retro.PNG)
