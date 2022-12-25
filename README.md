@@ -16,11 +16,11 @@
 
 |Nombre|e-mail|Legajo|Git|
 |---|---|---|---|
-|Álvarez Mariano|marianounqui@gmail.com|3740|IndiaMikeSierra|
-|Barraza Miguel|miguelbarraza2015@gmail.com|33108|barrazamigu
-|Malsam Leandro|leandro.malsam@gmail.com|43779|leatex|
-|Oronó Pablo|oronopablo@hotmail.com.ar|33531|pablov1993|
-|Soñez Mailín|mailinsonez@gmail.com|28708|mailinsz|
+|Á. Mariano|marianoun...@gmail.com|3740|IndiaMikeSierra|
+|B. Miguel|miguelbarraza2...@gmail.com|33108|barrazamigu
+|M. Leandro|lea.mal...@gmail.com|43779|leatex|
+|O. Pablo|oronopa...@hotmail.com.ar|33531|pablov1993|
+|S. Mailín|mailinso...@gmail.com|28708|mailinsz|
 
 ___
 
